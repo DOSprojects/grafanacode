@@ -1,0 +1,55 @@
+# pyproject.toml
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grafanacode"
+version = "0.5.7"
+description = "Grafana dashboards as Python code"
+readme = "README.rst"
+authors = [{ name = "DOSprojects", email = "mail@domain.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Monitoring",
+]
+keywords = [
+    "Grafana",
+    "Python",
+    "code"
+]
+requires-python = ">=3.7"
+dependencies = [
+    "attrs>=21.3.0",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pylint",
+  "sphinx",
+]
+test = [
+  "pytest > 5.0.0",
+]
+doc = [
+  "sphinx",
+]
+
+[project.urls]
+homepage = "https://github.com/DOSprojects/grafanacode.git"
+documentation = "https://grafanacode.readthedocs.io/en/latest/doc_module/grafanacode.html"
+repository = "https://github.com/DOSprojects/grafanacode.git"
+changelog = "https://github.com/DOSprojects/grafanacode/blob/main/CHANGELOG.rst"
+
+#[project.scripts]
+#realpython = "reader.__main__:main"
