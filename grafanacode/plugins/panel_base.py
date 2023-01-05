@@ -916,7 +916,7 @@ def extractPanelBaseOverrides(dset, pset, item):
      '''
     # pylint: disable=inconsistent-quotes
     if item != []:
-        pset['codeb'].append("{pset['intend']}overrides=PropOverrides([\n")
+        pset['codeb'].append(f"{pset['intend']}overrides=PropOverrides([\n")
         for i in item:
             hmtxt = ''
             hptxt = ''
@@ -962,7 +962,7 @@ def extractPanelBaseTresholds(dset, pset, item):
         if len(item) != 0:
             pset['codeb'].append(f"{pset['intend']}thresholds=PropThresholds([\n")
             for i in item:
-                pset['codeb'].append(f"{pset['intend']}    PropThresholdItem('{i['color']}', {i['value']}),\n")
+                pset['codeb'].append(f"{pset['intend']}    PropThresholdsItem('{i['color']}', {i['value']}),\n")
             pset['codeb'].append(f"{pset['intend']}]),\n")
     return True
 

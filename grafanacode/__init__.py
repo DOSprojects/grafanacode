@@ -21,6 +21,7 @@ import grafanacode.c_colors as COLORS
 #******************************************************************************
 from .funcs     import *
 from .funcs_api import *
+from .c_colors  import getColor, RGB, RGBA
 
 path  = os.path.dirname(__file__) + '/plugins'
 files = os.listdir(path)
