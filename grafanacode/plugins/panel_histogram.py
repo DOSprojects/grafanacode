@@ -34,7 +34,7 @@ class PanelHistogram(panel_base.PanelBaseExtOpt2):
     bucketoffset       = field( default=0,
                                 validator=instance_of(int))
     bucketsize         = field( default=None,
-                                validator=optional(instance_of(float)))
+                                validator=optional(instance_of((int, float))))
     combine            = field( default=False,
                                 validator=instance_of(bool))
 
